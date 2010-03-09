@@ -1,0 +1,20 @@
+<lift:surround with="default" at="content">
+  <h2>Welcome to your project!</h2>
+		<p>
+     
+        <span>Welcome to bbdemo at <lift:Time.now/></span>
+      
+      
+       <div id="list">
+        <lift:Blogs.list form="POST">
+            <ul>
+                <directory:entry />
+            </ul>
+         </lift:Blogs.list>
+      
+        </div>
+        
+      
+    </p>
+</lift:surround>
+
